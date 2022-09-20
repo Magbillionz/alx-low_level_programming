@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strcpy - copies a string from one pointer to another
  * including the terminating null byte (\0)
