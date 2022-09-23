@@ -46,5 +46,5 @@ void print_number(int n)
 	if (s8 != 0)
 		_putchar('0' + a8);
 	
-	putchar('0' + a9);
+	_putchar('0' + a9);
 }
