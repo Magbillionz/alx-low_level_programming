@@ -4,13 +4,13 @@
 
 /**
 
- * _strncpy - cpoies n bytes of src to the dest string
+ * _strncat - appends src to the dest string
 
- * @dest: string to copy to
+ * @dest: string to append by src
 
- * @src: string being copied
+ * @src: string to append to dest
 
- * @n: largest number of bytes to copy
+ * @n: largest number of bytes to append
 
  *
 
@@ -18,35 +18,35 @@
 
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 
 {
 
-	int i;
+	int i, j;
 
 
 
-	i = 0;
+	i = j = 0;
 
-	while (i < n && *(src + i))
-
-	{
-
-		*(dest + i) = *(src + i);
+	while (*(dest + i))
 
 		i++;
 
-	}
-
-	while (i < n)
+	while (j < n && *(src + j))
 
 	{
 
-		*(dest + i) = '\0';
+		*(dest + i) = *(src + j);
 
 		i++;
 
+		j++;
+
 	}
+
+	if (j < n)
+
+		*(dest + i) = *(src + j);
 
 	return (dest);
 
