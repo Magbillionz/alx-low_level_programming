@@ -1,4 +1,4 @@
-#include "main.h"
+#include <main.h>
 #include <stdio.h>
 
 /**
@@ -10,7 +10,7 @@
 *
 * Return: Void
 */
-void set_string(char **s, char *to)
+void set_string(char **s, char *to);
 {
 	*s = to;
 }
